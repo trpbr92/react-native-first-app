@@ -29,10 +29,10 @@ const handleCancelAddGoal = () => {
       <Button title='Add New Goal' onPress={() => setIsAddMode(true)} />
       <GoalInput visible={isAddMode} onAddGoal={handleAddGoal} onCancel={handleCancelAddGoal} />
       <FlatList
-      keyExtractor={(item, index) => item.id} 
-      data={courseGoals} 
-      renderItem={itemData => <GoalItem id={itemData.item.id} onDelete={handleRemoveGoal} title={itemData.item.value} /> } 
-    />
+        keyExtractor={(item, index) => item.id} 
+        data={courseGoals} 
+        renderItem={itemData => <GoalItem id={itemData.item.id} onDelete={handleRemoveGoal} title={itemData.item.value} /> } 
+      />
     </View>
   );
 }

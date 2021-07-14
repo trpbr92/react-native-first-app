@@ -24,8 +24,8 @@ const GoalInput = props => {
         value={enteredGoal}
         />
         <View style={styles.buttonContainer}>
-        <Button title ='ADD' onPress={handleAddGoal} />
-        <Button title='CANCEL' color='red' onPress={props.onCancel}/>
+          <Button title ='ADD' onPress={handleAddGoal} />
+          <Button title='CANCEL' color='red' onPress={props.onCancel}/>
         </View>
     </View>
     </Modal>
